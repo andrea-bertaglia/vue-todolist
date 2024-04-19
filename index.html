@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toboolist</title>
+    <!-- Vue.js script -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Custom style -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <!-- Header -->
+        <div class="header">
+          <img src="./img/logo.png" alt="Toboolist logo" />
+        </div>
+        <!-- /Header -->
+
+        <!-- Main -->
+
+        <!-- Search Box -->
+        <div class="container mt-30">
+          <div class="search-box">
+            <input
+              class="text"
+              type="text"
+              placeholder="es: Fare la spesa..."
+            />
+            <button class="search-button">Add Task</button>
+          </div>
+          <!-- /Search Box -->
+
+          <!-- Tasks -->
+          <div class="tasks-list">
+            <ol>
+              <li>
+                &#10148; TASK PRECEDENTI
+                <ul>
+                  <li>
+                    <span class="check">&check;</span>
+                    <div class="box barred">
+                      Quarterly Newsletter
+                      <span class="label editorial barred">Editorial</span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                &#10148; OGGI
+                <ul>
+                  <li>
+                    <span class="check">&check;</span>
+                    <div class="box barred">
+                      Recruiting blog post
+                      <span class="label editorial barred">Editorial</span>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <span class="check">&check;</span>
+                    <div class="box barred">
+                      Mobile app launch
+                      <span class="label q1-goals barred">Q1 Goals</span>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <span class="cross">&cross;</span>Interview John H.
+                    <span class="label recruiting">Recruiting</span>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <span class="check">&check;</span>
+                    <div class="box barred">
+                      Summit update to mobile storefronts
+                      <span class="label mobile barred">Mobile</span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                &#10148; PROSSIMI GIORNI
+                <ul>
+                  <li>
+                    <span class="cross">&cross;</span>Schedule meeting with Alex
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <span class="check">&check;</span>
+                    <div class="box barred">
+                      Homepage refresh
+                      <span class="label website barred">Website</span>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <span class="check">&check;</span>
+                    <div class="box barred">
+                      Onboard new Sales team members
+                      <span class="label sales barred">Sales</span>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <span class="check">&check;</span>
+                    <div class="box barred">
+                      Review editorial calendar
+                      <span class="label editorial barred">Editorial</span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <!-- /Tasks -->
+        </div>
+        <!-- /Main -->
+      </div>
+      <!-- Footer -->
+      <footer class="mt-30">
+        <span>&copy; 2024 Boolean Careers</span>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+  <!-- Custom script -->
+  <script src="./js/script.js"></script>
+</html>
