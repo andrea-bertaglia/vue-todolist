@@ -42,7 +42,8 @@
                     <div :class="curItem.done ? 'check' : 'cross'">
                       {{curItem.done ? '&check;' : '&cross;'}}
                     </div>
-                    <div class="box barred">
+                    <div class="box"
+                    :class="curItem.done ? 'barred' : ''">
                       <span>{{ curItem.text }}</span>
                       <span
                         class="label"
@@ -60,7 +61,8 @@
                     <div :class="curItem.done ? 'check' : 'cross'">
                       {{curItem.done ? '&check;' : '&cross;'}}
                     </div>
-                    <div class="box barred">
+                    <div class="box" 
+                    :class="curItem.done ? 'barred' : ''">
                       <span>{{ curItem.text }}</span>
                       <span
                         class="label"
@@ -78,7 +80,8 @@
                     <div :class="curItem.done ? 'check' : 'cross'">
                       {{curItem.done ? '&check;' : '&cross;'}}
                     </div>
-                    <div class="box barred">
+                    <div class="box" 
+                    :class="curItem.done ? 'barred' : ''">
                       <span>{{ curItem.text }}</span>
                       <span
                         class="label"
@@ -95,6 +98,28 @@
         </div>
         <!-- /Main -->
       </div>
+
+      <!-- Add box -->
+      <div class="container mt-30">
+        <div class="add-box">
+          <input
+            class="text"
+            type="text"
+            id="text"
+            v-model="newItem.text"
+          />
+          <select name="label" id="label" class="choice" v-model="newItem.label">
+            <option value="Editorial" selected>Editorial</option>
+            <option value="Q1-Goals">Q1-Goals</option>
+            <option value="Recruiting">Recruiting</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Website">Website</option>
+            <option value="Sales">Sales</option>
+          </select>
+          <button class="add-button" @click="addItem">Add Task</button>
+        </div>
+        <!-- /Add box -->
+
       <!-- Footer -->
       <footer class="mt-30">
         <span>&copy; 2024 Boolean Careers</span>

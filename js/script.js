@@ -3,6 +3,11 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      newItem: {
+        text: "",
+        label: "",
+        done: false,
+      },
       tasksPrev: [
         {
           text: "Quarterly Newsletter",
@@ -55,5 +60,14 @@ createApp({
         },
       ],
     };
+  },
+  methods: {
+    addItem: function () {
+      console.log(this);
+      this.tasksNext.push({
+        ...this.newItem,
+      });
+      console.log(this.tasksNext);
+    },
   },
 }).mount("#app");
