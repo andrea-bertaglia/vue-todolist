@@ -1,145 +1,152 @@
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* COMMON */
 ul,
-ol{
-    list-style-type: none;
-  }
+ol {
+  list-style-type: none;
+}
 
 li > ul {
-    background-color: white;
-    margin: 20px;
-    padding: 5px;
-    list-style-type: none; 
-    padding-left: 0;       
-    margin-left: 0;        
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    box-shadow: 2px 2px rgb(176, 174, 174);
+  background-color: white;
+  margin: 20px;
+  padding: 5px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .container {
-    background-color: rgb(237 242 247);
-    width: 80%;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
+  background-color: #edf2f7;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  max-width: 850px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
 }
 
 .mt-30 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 /* HEADER */
 .header {
-    background-color: rgb(237 242 247);
-    text-align: center;
-    box-shadow: 5px 5px rgb(176, 174, 174);
+  background-color: rgb(237 242 247);
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 /* MAIN */
 
 .search-box {
-    padding: 20px;
-    text-align: center;
-    box-shadow: 5px 0px rgb(176, 174, 174);
+  padding: 20px;
+  text-align: center;
 }
 
 .text {
-    padding: 7px;
-    font-size: 10px;
-    color: rgb(172, 171, 171);
-    width: 40%;
-    border-radius: 5%;
-    border: 1px solid grey;
-    
+  padding: 7px;
+  margin-right: 5px;
+  font-size: 10px;
+  color: rgb(172, 171, 171);
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .search-button {
-    padding: 7px;
-    font-size: 10px;
-    background-color: rgb(19 170 245);
-    color: white;
-    border-radius: 5%;
-    border: 1px solid grey;
+  padding: 7px;
+  font-size: 10px;
+  background-color: rgb(19 170 245);
+  color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(19 170 245);
 }
 
 .tasks-list {
-    border-top: 3px solid white;
-    padding: 50px;
-    text-align: left;
-    box-shadow: 5px 5px rgb(176, 174, 174);
-
+  border-top: 2px solid white;
+  padding: 50px;
+  text-align: left;
 }
 
 .label {
-    display: inline-block;
-    width: 70px;
-    height: 25px;
-    line-height: 25px;
-    font-size: 12px;
-    border-radius: 30px;
-    text-align: center;
-    color: white;
-    vertical-align: middle;
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
 }
 
 .editorial {
-    background-color: #09a9ee;
+  background-color: #09a9ee;
 }
 
 .q1-goals {
-    background-color: #ab5de6;
+  background-color: #ab5de6;
 }
 
 .recruiting {
-    background-color: #2cc7ab;
+  background-color: #2cc7ab;
 }
 
 .mobile {
-    background-color: #ff9b01;
+  background-color: #ff9b01;
 }
 
 .website {
-    background-color: #ed4a9e;
+  background-color: #ed4a9e;
 }
 
 .sales {
-    background-color: #a4d116;
+  background-color: #a4d116;
 }
 
 .check {
-    color: lightgreen;
-    border: 1px solid lightgreen;
-    border-radius: 50%;
-    margin: 5px;
-    padding: 1px;
+  color: lightgreen;
+  border: 1px solid lightgreen;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 5px;
+  line-height: 10px;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .cross {
-    color: red;
-    border: 1px solid red;
-    border-radius: 50%;
-    margin: 5px;
-    padding: 1px;
+  color: red;
+  border: 1px solid red;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 5px;
+  line-height: 10px;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .barred {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .box {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* FOOTER */
 
 footer {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: center;
 }
