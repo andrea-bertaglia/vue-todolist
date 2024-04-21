@@ -37,84 +37,54 @@
             <ol>
               <li>
                 &#10148; TASK PRECEDENTI
-                <ul>
+                <ul v-for="curItem in tasksPrev">
                   <li>
-                    <div class="check">&check;</div>
+                    <div :class="curItem.done ? 'check' : 'cross'">
+                      {{curItem.done ? '&check;' : '&cross;'}}
+                    </div>
                     <div class="box barred">
-                      Quarterly Newsletter
-                      <span class="label editorial barred">Editorial</span>
+                      <span>{{ curItem.text }}</span>
+                      <span
+                        class="label"
+                        :class="curItem.label.toLowerCase(), {'barred': curItem.done}"
+                        >{{curItem.label}}</span
+                      >
                     </div>
                   </li>
                 </ul>
               </li>
               <li>
                 &#10148; OGGI
-                <ul>
+                <ul v-for="curItem in tasksToday">
                   <li>
-                    <div class="check">&check;</div>
-                    <div class="box barred">
-                      Recruiting blog post
-                      <span class="label editorial barred">Editorial</span>
+                    <div :class="curItem.done ? 'check' : 'cross'">
+                      {{curItem.done ? '&check;' : '&cross;'}}
                     </div>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <div class="check">&check;</div>
                     <div class="box barred">
-                      Mobile app launch
-                      <span class="label q1-goals barred">Q1 Goals</span>
-                    </div>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <div class="cross">&cross;</div>
-                    Interview John H.
-                    <span class="label recruiting">Recruiting</span>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <div class="check">&check;</div>
-                    <div class="box barred">
-                      Summit update to mobile storefronts
-                      <span class="label mobile barred">Mobile</span>
+                      <span>{{ curItem.text }}</span>
+                      <span
+                        class="label"
+                        :class="curItem.label.toLowerCase(), {'barred': curItem.done}"
+                        >{{curItem.label}}</span
+                      >
                     </div>
                   </li>
                 </ul>
               </li>
               <li>
                 &#10148; PROSSIMI GIORNI
-                <ul>
+                <ul v-for="curItem in tasksNext">
                   <li>
-                    <span class="cross">&cross;</span>Schedule meeting with Alex
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <div class="check">&check;</div>
-                    <div class="box barred">
-                      Homepage refresh
-                      <span class="label website barred">Website</span>
+                    <div :class="curItem.done ? 'check' : 'cross'">
+                      {{curItem.done ? '&check;' : '&cross;'}}
                     </div>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <div class="check">&check;</div>
                     <div class="box barred">
-                      Onboard new Sales team members
-                      <span class="label sales barred">Sales</span>
-                    </div>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <div class="check">&check;</div>
-                    <div class="box barred">
-                      Review editorial calendar
-                      <span class="label editorial barred">Editorial</span>
+                      <span>{{ curItem.text }}</span>
+                      <span
+                        class="label"
+                        :class="curItem.label.toLowerCase(), {'barred': curItem.done}"
+                        >{{curItem.label}}</span
+                      >
                     </div>
                   </li>
                 </ul>

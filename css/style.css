@@ -50,18 +50,18 @@ li > ul {
 }
 
 .text {
-  padding: 7px;
+  padding: 10px;
   margin-right: 5px;
   font-size: 10px;
   color: rgb(172, 171, 171);
   width: 40%;
   border-radius: 5px;
-  border: 1px solid grey;
+  border: 1px solid lightgray;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .search-button {
-  padding: 7px;
+  padding: 9px;
   font-size: 10px;
   background-color: rgb(19 170 245);
   color: white;
